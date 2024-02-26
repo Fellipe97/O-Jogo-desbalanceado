@@ -10,3 +10,45 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
 `;
+
+export const Box = styled.div`
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    //background-color: red;
+`;
+
+export const BoxTop = styled.div`
+    
+`;
+export const BoxContent = styled.div`
+    margin-top: 20px;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+`;
+
+export const Title = styled.h1`
+    color: #A283D3;
+    font-size: 40px;
+    font-weight: bold;
+`;
+
+export const Line = styled.div`
+    width: 100%;
+    height: 5px;
+
+    background-color: #8C61B3;
+
+    border-radius: 100px;
+
+    margin-top: 10px;
+`;

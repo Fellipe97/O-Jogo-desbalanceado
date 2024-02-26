@@ -7,12 +7,12 @@ import { Button } from '../../components/Button';
 
 export const Home = () => {
 	const navigate = useNavigate();
-
+	
 
 	return (
 		<Container>
 			<Box>
-				<Title>O jogo desbalancedo</Title>
+				<Title>O jogo desbalanceado</Title>
 				<Line />
 				<Button 
 					title='Simulação assistida'
