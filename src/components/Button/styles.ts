@@ -9,7 +9,7 @@ export const ButtonCTA = styled.button<ButtonCTAProps>`
     padding: 15px;
     font-size: 24px;
 
-    color: #5B3A70;
+    color: #ffffff;
 
     border-radius: 5px;
     border: 0;

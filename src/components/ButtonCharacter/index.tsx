@@ -1,7 +1,6 @@
 import { ButtonHTMLAttributes, useEffect } from 'react';
 import { ButtonCTA } from "./styles";
 import CircularProgress from '@mui/material/CircularProgress';
-import backgroundButton from '../../assets/personagens/teste.png'
 
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -11,18 +10,27 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 
 export function ButtonCharacter({ picture, isDisabled = false, ...rest }: ButtonProps) {
 
+    useEffect(()=>{
+        console.log(picture)
+    },[])
 
     return (
         <ButtonCTA
             disabled={isDisabled}
-            style={{ backgroundImage: `url(../../assets/personagens/teste.png)` }}
-            //style={{ backgroundImage: `url(${backgroundButton})` }}
+            //style={{ backgroundImage: `url(backgroundButton)` }}
+            //style={{ backgroundImage: `url(${picture})` }}
+            style={{ backgroundImage: `url(${picture})` }}
+            
+            
+            //style={{ backgroundImage: `url("https://github.com/Fellipe97/O-Jogo-desbalanceado/blob/main/src/assets/personagens/teste.png")` }}
+
             {...rest}
         >
             {isDisabled &&
                 <CircularProgress size={24} color="inherit" />
             }
 
+            {/* <img src={`../../assets/personagens/${picture}.png`}/> */}
         </ButtonCTA>
     )
 }

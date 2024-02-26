@@ -20,12 +20,12 @@ export const ButtonCTA = styled.button<ButtonCTAProps>`
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-    width: 230px;
-    height: 300px;
+    width: 150px;
+    height: 200px;
     
     transition: .6s ease-in-out;
 
     &:not(:disabled):hover{
-    filter: brightness(110%);
-  };
+        opacity: .5;
+    };
 `

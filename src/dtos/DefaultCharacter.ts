@@ -1,4 +1,14 @@
 import { Character } from "./Character";
+import Character0 from '../assets/personagens/Character0.png'
+import Character1 from '../assets/personagens/Character1.png'
+import Character2 from '../assets/personagens/Character2.png'
+import Character3 from '../assets/personagens/Character3.png'
+import Character4 from '../assets/personagens/Character4.png'
+import Character5 from '../assets/personagens/Character5.png'
+import Character6 from '../assets/personagens/Character6.png'
+import Character7 from '../assets/personagens/Character7.png'
+import Character8 from '../assets/personagens/Character8.png'
+
 
 export const DefaultCharacter: Character[] = [
     {
@@ -8,9 +18,9 @@ export const DefaultCharacter: Character[] = [
         agility: 5,
         intelligence: 3,
         resistance: 7,
-        pictureSmall:'Character0',
+        pictureSmall: Character0,
         pictureBig: ''
-        
+
     },
     {
         id: 1,
@@ -19,9 +29,9 @@ export const DefaultCharacter: Character[] = [
         agility: 8,
         intelligence: 4,
         resistance: 6,
-        pictureSmall:'Character1',
+        pictureSmall: Character1,
         pictureBig: ''
-        
+
     },
     {
         id: 2,
@@ -30,9 +40,9 @@ export const DefaultCharacter: Character[] = [
         agility: 9,
         intelligence: 7,
         resistance: 4,
-        pictureSmall:'Character2',
+        pictureSmall: Character2,
         pictureBig: ''
-        
+
     },
     {
         id: 3,
@@ -41,9 +51,9 @@ export const DefaultCharacter: Character[] = [
         agility: 5,
         intelligence: 8,
         resistance: 7,
-        pictureSmall:'Character3',
+        pictureSmall: Character3,
         pictureBig: ''
-        
+
     },
     {
         id: 4,
@@ -52,9 +62,9 @@ export const DefaultCharacter: Character[] = [
         agility: 6,
         intelligence: 5,
         resistance: 6,
-        pictureSmall:'Character4',
+        pictureSmall: Character4,
         pictureBig: ''
-        
+
     },
     {
         id: 5,
@@ -63,9 +73,9 @@ export const DefaultCharacter: Character[] = [
         agility: 7,
         intelligence: 10,
         resistance: 5,
-        pictureSmall:'Character5',
+        pictureSmall: Character5,
         pictureBig: ''
-        
+
     },
     {
         id: 6,
@@ -74,9 +84,9 @@ export const DefaultCharacter: Character[] = [
         agility: 4,
         intelligence: 6,
         resistance: 7,
-        pictureSmall:'Character6',
+        pictureSmall: Character6,
         pictureBig: ''
-        
+
     },
     {
         id: 7,
@@ -85,9 +95,9 @@ export const DefaultCharacter: Character[] = [
         agility: 10,
         intelligence: 5,
         resistance: 8,
-        pictureSmall:'Character7',
+        pictureSmall: Character7,
         pictureBig: ''
-        
+
     },
     {
         id: 7,
@@ -96,9 +106,9 @@ export const DefaultCharacter: Character[] = [
         agility: 7,
         intelligence: 7,
         resistance: 7,
-        pictureSmall:'Character8',
+        pictureSmall: Character8,
         pictureBig: ''
-        
+
     }
 
 ]

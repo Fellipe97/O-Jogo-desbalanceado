@@ -5,10 +5,14 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
 
-    height: 100vh;
+    //height: 100vh;
 
     justify-content: center;
     align-items: center;
+
+    .buttonStyle{
+        margin-bottom: 50px;
+    }
 `;
 
 export const Box = styled.div`
@@ -24,15 +28,20 @@ export const Box = styled.div`
     //background-color: red;
 `;
 
-export const BoxTop = styled.div`
-    
+export const BoxTitle = styled.div`
+    margin-top: 20px;
 `;
+
 export const BoxContent = styled.div`
     margin-top: 20px;
-    background-color: red;
+
+    //background-color: red;
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+
+    justify-content: left;
+
     gap: 10px;
 `;
 
