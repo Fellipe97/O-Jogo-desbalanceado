@@ -1,4 +1,5 @@
 import { Character } from "./Character";
+
 import Character0 from '../assets/personagens/Character0.png'
 import Character1 from '../assets/personagens/Character1.png'
 import Character2 from '../assets/personagens/Character2.png'
@@ -8,6 +9,10 @@ import Character5 from '../assets/personagens/Character5.png'
 import Character6 from '../assets/personagens/Character6.png'
 import Character7 from '../assets/personagens/Character7.png'
 import Character8 from '../assets/personagens/Character8.png'
+
+import Arthur from '../assets/personagens corpo inteiro/Arthur.png'
+import Beatriz from '../assets/personagens corpo inteiro/Beatriz.png'
+import Carlos from '../assets/personagens corpo inteiro/Carlos.png'
 
 
 export const DefaultCharacter: Character[] = [
@@ -19,7 +24,7 @@ export const DefaultCharacter: Character[] = [
         intelligence: 3,
         resistance: 7,
         pictureSmall: Character0,
-        pictureBig: ''
+        pictureBig: Arthur
 
     },
     {
@@ -30,7 +35,7 @@ export const DefaultCharacter: Character[] = [
         intelligence: 4,
         resistance: 6,
         pictureSmall: Character1,
-        pictureBig: ''
+        pictureBig: Beatriz
 
     },
     {
@@ -41,7 +46,7 @@ export const DefaultCharacter: Character[] = [
         intelligence: 7,
         resistance: 4,
         pictureSmall: Character2,
-        pictureBig: ''
+        pictureBig: Carlos
 
     },
     {
