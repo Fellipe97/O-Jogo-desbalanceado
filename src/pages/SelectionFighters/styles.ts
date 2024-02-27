@@ -61,7 +61,7 @@ export const Line = styled.div`
 
     margin-top: 10px;
 `;
-export const DivButtons = styled.div`
+export const BoxButtons = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;

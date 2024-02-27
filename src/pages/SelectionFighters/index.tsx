@@ -8,14 +8,12 @@ import {
 	Title,
 	Line,
 	BoxContent,
-	DivButtons
+	BoxButtons
 } from './styles';
 import { Button } from '../../components/Button';
 import { CharacterContext } from '../../context/CharacterContext';
 import { DefaultCharacter } from '../../dtos/DefaultCharacter';
 import { ButtonCharacter } from '../../components/ButtonCharacter';
-
-import Character0 from '../../assets/personagens/Character0.png'
 
 
 
@@ -73,10 +71,9 @@ export const SelectionFighters = () => {
 						))
 					}
 				</BoxContent>
-			</Box>
 
 			{character && character?.length !== 0 &&
-				<DivButtons>
+				<BoxButtons>
 
 					<Button
 						title='Remover'
@@ -91,8 +88,9 @@ export const SelectionFighters = () => {
 						onClick={handleStartGame}
 						className='buttonStyle'
 					/>
-				</DivButtons>
+				</BoxButtons>
 			}
+			</Box>
 		</Container>
 	);
 };
