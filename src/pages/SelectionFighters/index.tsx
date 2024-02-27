@@ -27,13 +27,12 @@ export const SelectionFighters = () => {
 
 	useEffect(() => {
 		console.log('character: ', character)
-
 		console.log('DefaultCharacter', DefaultCharacter)
 	}, [])
 
 	const handleStartGame = () => {
 		if(character && character?.length > 1){
-
+			navigate('/gameConfig')
 		}else{
 			alert('Adione pelo menos dois personagens.')
 		}
