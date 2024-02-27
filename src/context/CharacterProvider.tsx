@@ -37,10 +37,9 @@ export const CharacterProvider = ({ children }: { children: JSX.Element }) => {
 
     const removeCharacter = async () => {
         try {
-
-            const characterToRemove = character[character.length - 1];
-            setCharacter(prevCharacters => prevCharacters.filter(character => character !== characterToRemove));
-            const updatedCharacters = character.filter(character => character !== characterToRemove);
+            const updatedCharacters = [...character];
+            updatedCharacters.pop();
+            setCharacter(updatedCharacters);
             localStorage.setItem('characters', JSON.stringify(updatedCharacters));
 
             return {
