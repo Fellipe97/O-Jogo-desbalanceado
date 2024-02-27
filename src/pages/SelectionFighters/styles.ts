@@ -61,3 +61,9 @@ export const Line = styled.div`
 
     margin-top: 10px;
 `;
+export const DivButtons = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+`;

@@ -7,7 +7,8 @@ import {
 	BoxTitle,
 	Title,
 	Line,
-	BoxContent
+	BoxContent,
+	DivButtons
 } from './styles';
 import { Button } from '../../components/Button';
 import { CharacterContext } from '../../context/CharacterContext';
@@ -30,6 +31,14 @@ export const SelectionFighters = () => {
 		console.log('DefaultCharacter', DefaultCharacter)
 	}, [])
 
+	const handleStartGame = () => {
+		if(character && character?.length > 1){
+
+		}else{
+			alert('Adione pelo menos dois personagens.')
+		}
+	}
+
 	return (
 		<Container>
 			<Box>
@@ -42,7 +51,7 @@ export const SelectionFighters = () => {
 					{DefaultCharacter.map((item) => (
 						<ButtonCharacter
 							picture={item.pictureSmall} //{item.pictureSmall}
-							onClick={()=>characterContext.addCharacter(item)}
+							onClick={() => characterContext.addCharacter(item)}
 						/>
 					))}
 				</BoxContent>
@@ -59,8 +68,8 @@ export const SelectionFighters = () => {
 					{character && character?.length !== 0 &&
 						character.map((item) => (
 							<ButtonCharacter
-								picture={item.pictureSmall} //{item.pictureSmall}
-								onClick={()=>alert(item)}
+								picture={item.pictureSmall}
+								onClick={() => alert(item)}
 							/>
 						))
 					}
@@ -68,13 +77,22 @@ export const SelectionFighters = () => {
 			</Box>
 
 			{character && character?.length !== 0 &&
-				<Button
-					title='Remover'
-					style={{ marginTop: 20 }}
-					onClick={() => characterContext.removeCharacter()}
-					color='redButton'
-					className='buttonStyle'
-				/>
+				<DivButtons>
+
+					<Button
+						title='Remover'
+						style={{ marginTop: 20 }}
+						onClick={() => characterContext.removeCharacter()}
+						color='redButton'
+						className='buttonStyle'
+					/>
+					<Button
+						title='Iniciar o jogo'
+						style={{ marginTop: 20 }}
+						onClick={handleStartGame}
+						className='buttonStyle'
+					/>
+				</DivButtons>
 			}
 		</Container>
 	);
