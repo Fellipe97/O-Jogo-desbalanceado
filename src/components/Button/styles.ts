@@ -9,6 +9,8 @@ export const ButtonCTA = styled.button<ButtonCTAProps>`
     padding: 15px;
     font-size: 24px;
 
+    width: 350px;
+
     color: #ffffff;
 
     border-radius: 5px;
@@ -31,6 +33,7 @@ export const ButtonCTA = styled.button<ButtonCTAProps>`
     transition: .6s ease-in-out;
 
     &:not(:disabled):hover{
-    filter: brightness(110%);
-  };
+        //filter: brightness(110%);
+        opacity: .6;
+    };
 `
