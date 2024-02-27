@@ -22,7 +22,12 @@ export const GameConfig = () => {
     const navigate = useNavigate();
     const { character } = useContext(CharacterContext);
 
-
+    useEffect(()=>{
+        if(!character || character?.length<2){
+            alert("Por favor, selecione pelo menos 2 personagens");
+            navigate('/selectionFighters');
+        }
+    },[])
 
     return (
         <Container>
