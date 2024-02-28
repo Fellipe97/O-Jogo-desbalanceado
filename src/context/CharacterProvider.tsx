@@ -11,8 +11,7 @@ export const CharacterProvider = ({ children }: { children: JSX.Element }) => {
         const recoverData = async () => {
             const storageData = localStorage.getItem('characters');
             if (storageData) {
-                const charactersArray = JSON.parse(storageData) as Character[];
-                setCharacter(charactersArray);
+                setCharacter(JSON.parse(storageData));
             }
         }
         recoverData()
@@ -20,8 +19,8 @@ export const CharacterProvider = ({ children }: { children: JSX.Element }) => {
 
     const addCharacter = async (newCharacter: Character) => {
         try {
-            setCharacter(prevCharacters => [...prevCharacters, newCharacter]);
             const updatedCharacters = [...character, newCharacter];
+            setCharacter(prevCharacters => [...prevCharacters, newCharacter]);
             localStorage.setItem('characters', JSON.stringify(updatedCharacters));
             return {
                 update: true
