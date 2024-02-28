@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 import {
@@ -21,13 +21,16 @@ import { PieChart } from '@mui/x-charts/PieChart';
 export const GameConfig = () => {
     const navigate = useNavigate();
     const { character } = useContext(CharacterContext);
+    const [dataLoaded, setDataLoaded] = useState(false);
 
-    useEffect(()=>{
-        if(!character || character?.length<2){
+    useEffect(() => {
+        if ( (!character || character?.length < 2) && dataLoaded) {
             alert("Por favor, selecione pelo menos 2 personagens");
             navigate('/selectionFighters');
+        } else {
+            setDataLoaded(true);
         }
-    },[])
+    }, [character])
 
     return (
         <Container>
