@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, useEffect } from 'react';
+import { ButtonHTMLAttributes } from 'react';
 import { ButtonCTA } from "./styles";
 import CircularProgress from '@mui/material/CircularProgress';
 

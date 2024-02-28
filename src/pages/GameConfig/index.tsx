@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react'
+import { useContext, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 import {
@@ -14,7 +14,7 @@ import {
 import { Button } from '../../components/Button';
 import { CharacterContext } from '../../context/CharacterContext';
 
-import { PieChart, pieArcLabelClasses } from '@mui/x-charts/PieChart';
+import { PieChart } from '@mui/x-charts/PieChart';
 
 
 
