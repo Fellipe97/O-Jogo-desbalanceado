@@ -66,7 +66,8 @@ export const SelectionFighters = () => {
 						character.map((item) => (
 							<ButtonCharacter
 								picture={item.pictureSmall}
-								onClick={() => alert(item)}
+								//onClick={() => alert(item)} //pensei em implementar algo para já conseguir visualizar os atributos do personagem
+								disabled
 							/>
 						))
 					}
